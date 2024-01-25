@@ -1,0 +1,240 @@
+/* Reset default margin and padding */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background and text colors */
+body {
+    background-color: rgb(240, 255, 217);
+    color: rgb(182, 184, 185);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #292929;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 1s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Updated Navigation Styles */
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.navigation-menu li {
+    display: inline-flex;
+    margin-right: 20px;
+    border-radius: 50%;
+    font-family: 'Foldit', sans-serif;
+    font-size: 2.8rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navigation-menu li:last-child {
+    margin-right: 0;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b6b9b8;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.navigation-menu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:#92cdc3;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s ease;
+}
+
+.navigation-menu li:hover {
+    transform: translateY(-5px); /* Move the item up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+.navigation-menu a:hover {
+    color: rgb(174, 236, 116);
+    padding-bottom: 5px;
+}
+
+.navigation-menu a:hover:before {
+    transform: scaleX(1);
+    background-color: #e7f7b8;
+}
+
+
+/* Main Styles */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Add a border top and bottom and space above the heading */
+.heading {
+    font-size: 20rem;
+    font-style: oblique;
+    font-family: 'Foldit', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin: 20px 0;
+    animation: move-horizontally 15s infinite linear; 
+    padding: 10px; /* Adjust padding as needed */
+}
+
+@keyframes move-horizontally {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Set background color for the body */
+
+/* Style the sections 
+section {
+   
+    margin: 20px;
+    padding: 20px;
+    background-color: #e1ecb4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  
+}
+
+/* Keyframes animation for section fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style section headings */
+h2 {font-family: 'Foldit', cursive;
+    font-size: 70px;
+    color: #333;
+    margin-bottom: 10px;
+    animation: colorChange 2s infinite alternate;
+}
+
+
+/* Style section content */
+p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Style links in the contact section */
+address a {
+    color: #0a62dc;
+    text-decoration: none;
+    transition: color 1s ease-in-out;
+}
+
+address a:hover {
+    color: rgb(236, 90, 27);
+    font-size: larger;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #292929;
+    color: #bbe571;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+ 
+    
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 16px;
+    border-radius: 50%;
+    transition: transform 1s ease;
+}
+
+.footer-logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Fancy Footer Text *\
+.footer-text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*
+.footer-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #b9b6b6;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s ease;
+}
+
+.footer-text:hover {
+    color: #e2f689;
+}
+
+.footer-text:hover:before {
+    transform: scaleX(1);
+    background-color: #e8dcdc;
+}
+*\
