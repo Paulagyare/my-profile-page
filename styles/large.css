@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 /* Header Styles */
@@ -16,6 +15,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #030303;
+
 }
 
 .logo-container {
@@ -23,8 +23,8 @@ header {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-left: 30px;
     transition: transform 1s ease;
@@ -40,15 +40,13 @@ header {
     list-style: none;
     margin-top: 3px;
     border-radius: 50%;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .navigation-menu li {
     display: inline-flex;
-
-    border-radius: 50%;
-    font-family: 'Foldit', sans-serif;
-    font-size: 2.8rem;
+    border-radius: 40%;
+    font-size: 2rem;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-right: 40px;
@@ -57,6 +55,7 @@ header {
 .navigation-menu li:last-child {
     margin-right: 0;
     background-color: #ffffff;
+
 }
 
 .navigation-menu a {
@@ -64,7 +63,10 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    padding: 5px;
+    padding: 3px;
+    color: #454343;
+    font-family: 'Rubik Burned', system-ui;
+
 }
 
 .navigation-menu a:before {
@@ -88,7 +90,7 @@ header {
 .navigation-menu a:hover {
     padding-bottom: 10px;
     background-color: #f7f7f7;
-    border-radius: 80%;
+    border-radius: 60%;
 }
 
 .navigation-menu a:hover:before {
@@ -100,20 +102,24 @@ header {
 /* Main Styles */
 .pic {
     max-width: 100%;
-    max-height:100%;
-    display: block; /* Removes extra space below the image */
-    margin: 0; /* Center the image horizontally */
+    max-height: 100%;
+    display: block;
+    /* Removes extra space below the image */
+    margin: 0;
+    /* Center the image horizontally */
 }
 
 /* Add a border top and bottom and space above the heading */
 .banner {
     margin-left: 300px;
     margin-right: 100px;
-    font-size: 3rem;
-    font-family: 'Foldit', cursive;
+    font-size: 260%;
+    font-family: 'Creepster', system-ui;
+    color: #454343;
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: move-horizontally 15s infinite linear;
+    
     /* Adjust padding as needed */
 }
 
@@ -126,134 +132,6 @@ header {
         transform: translateX(-75%);
     }
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  /* Profile Info Styling */
-  .profile-info {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .subheading {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .name {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .location, .email {
-    font-size: 1.2rem;
-    margin: 5px 0;
-  }
-  
-  .email a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px dashed #fff;
-  }
-  
-  .email a:hover {
-    color: #000000;
-  }
-  
-  /* Profile Picture Styling */
-  .profile-picture {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .profile-picture img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Skills Styling */
-  .skills {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .skillset {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-  }
-  
-  .skillset li {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-  }
-  
-  /* About Me Styling */
-  .about-me {
-    text-align: center;
-    padding: 20px;
-    background-color: #e74c3c;
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .about-me img {
-    border-radius: 50%;
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .about-me p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-top: 20px;
-  }
-  
-  /* Education Styling */
-  .education {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .edu-list {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-  }
-  
-  .edu-list dt {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .edu-list dd {
-    font-size: 1.2rem;
-    margin: 0;
-  }
 
 /* Hover effect for footer logo */
 .footer-logo:hover {
@@ -264,10 +142,13 @@ header {
 
 /* Footer Styles */
 footer {
-    background-color: #111; /* Dark background color for the footer */
-    color: #e2ffb0;
+    background-color: #000000;
+    /* Dark background color for the footer */
+    color: #ffffff;
     text-align: center;
     padding: 20px;
+    font-family: 'Megrim', system-ui;
+    margin-top: -10px;
 }
 
 .footer-content {
@@ -289,6 +170,7 @@ footer {
     letter-spacing: 2px;
     margin: 10px 0;
     color: #ccc;
+    font-family: 'Megrim', system-ui;
 }
 
 .footer-text:before {
