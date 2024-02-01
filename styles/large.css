@@ -46,7 +46,7 @@ header {
 .navigation-menu li {
     display: inline-flex;
     border-radius: 40%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-right: 40px;
@@ -63,10 +63,8 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    padding: 3px;
     color: #454343;
-    font-family: 'Rubik Burned', system-ui;
-
+    font-family: 'Nosifer', sans-serif;
 }
 
 .navigation-menu a:before {
