@@ -135,7 +135,7 @@ header {
   .profile-info {
     text-align: center;
     padding: 20px;
-    background-color: #3498db;
+    background-color: #000000;
     color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -163,7 +163,7 @@ header {
   }
   
   .email a:hover {
-    color: #3498db;
+    color: #000000;
   }
   
   /* Profile Picture Styling */
@@ -183,7 +183,7 @@ header {
   .skills {
     text-align: center;
     padding: 20px;
-    background-color: #2ecc71;
+    background-color: #000000;
     color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -196,7 +196,7 @@ header {
   }
   
   .skillset li {
-    background-color: #27ae60;
+    background-color: #000000;
     color: #fff;
     padding: 10px;
     margin: 5px;
@@ -232,7 +232,7 @@ header {
   .education {
     text-align: center;
     padding: 20px;
-    background-color: #e67e22;
+    background-color: #000000;
     color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
