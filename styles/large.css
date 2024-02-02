@@ -134,6 +134,7 @@ header {
     display: flex;
     flex-direction: column;
     /* Stack the flex items vertically */
+    
 }
 
 #centered-text h2 {
@@ -175,17 +176,22 @@ header {
     /* Set the background color of the shape */
     border-radius: 60% 40% 60% 30%;
     transition: transform 1s ease;
+    box-shadow: 5px 15px 30px rgba(133, 104, 104, 0.4);
 }
 
 
 #text-container img.profile-pic {
-    width: 500px;
+    width: 100%;
     height: auto;
+    max-width: 500px;
+    /* set a maximum width to avoid excessive scaling */
     border-radius: 57% 10% 60% 30%;
     margin-bottom: 30px;
     margin-left: 70px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* increased box shadow for cover effect */
     transition: 2s;
+    box-shadow: 5px 15px 30px rgba(133, 104, 104, 0.4);
 }
 
 /* On mouse-over, add a shadow. */
@@ -193,13 +199,15 @@ header {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
     transform: rotate(360deg);
     width: 380px;
+    box-shadow: 0 15px 30px rgba(133, 104, 104, 0.4);
+    /* adjust hover effect */
 }
 
-#text-container p:hover{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+#text-container p:hover {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     color: #9a9090;
-  
 }
 
 /* Hover effect for footer logo */
@@ -214,7 +222,7 @@ footer {
     color: #9a9090;
     text-align: center;
     padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: -10px;
     font-style: bold;
 }
