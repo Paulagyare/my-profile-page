@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #030303;
+    background-color: #1e1d1d;
 
 }
 
@@ -104,7 +104,7 @@ header {
     display: block;
     /* Removes extra space below the image */
     margin: 0;
-    /* Center the image horizontally */
+    margin-bottom: -10px;
 }
 
 /* Add a border top and bottom and space above the heading */
@@ -116,12 +116,10 @@ header {
     color: #454343;
     text-transform: uppercase;
     letter-spacing: 2px;
-    animation: move-horizontally 15s infinite linear;
-    
-    /* Adjust padding as needed */
+    animation: move-horizontally-banner 10s infinite linear;
 }
 
-@keyframes move-horizontally {
+@keyframes move-horizontally-banner {
     0% {
         transform: translateX(7%);
     }
@@ -131,22 +129,78 @@ header {
     }
 }
 
+#text-container {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    /* Stack the flex items vertically */
+}
+
+#centered-text h2 {
+    font-size: 500%;
+    font-family: 'Creepster', system-ui;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adjust as needed */
+    animation: move-horizontally-h2 50s infinite linear;
+}
+
+@keyframes move-horizontally-h2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+#text-container p {
+    font-size: 23px;
+    color: #d2d2d2;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-family: 'Megrim', system-ui;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* Add padding to the left */
+    padding: 10px;
+    margin-right: 180px;
+    /* Adjust as needed */
+    float: right;
+    background-color: rgb(39, 37, 37);
+    /* Set the background color of the shape */
+    border-radius: 60% 40% 60% 30%;
+}
+
+
+#text-container img.profile-pic {
+    width: 500px;
+    height: auto;
+    border-radius: 57% 10% 60% 30%;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Hover effect for footer logo */
 .footer-logo:hover {
     transform: rotate(360deg);
 }
 
-/* Existing styles remain unchanged */
-
 /* Footer Styles */
 footer {
-    background-color: #000000;
+    background-color: #1e1d1d;
     /* Dark background color for the footer */
     color: #ffffff;
     text-align: center;
     padding: 20px;
     font-family: 'Megrim', system-ui;
     margin-top: -10px;
+    font-style: bold;
 }
 
 .footer-content {
@@ -169,6 +223,7 @@ footer {
     margin: 10px 0;
     color: #ccc;
     font-family: 'Megrim', system-ui;
+    font-size: larger;
 }
 
 .footer-text:before {
