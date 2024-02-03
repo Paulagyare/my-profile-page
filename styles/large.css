@@ -175,12 +175,12 @@ header {
     font-size: 24px;
     color: #9a9090;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     padding-right: 10px;
     padding-left: 10px;
-    padding: 20px;
+    padding: 10px;
     margin-right: 180px;
     float: right;
     background-color: rgb(39, 37, 37);
