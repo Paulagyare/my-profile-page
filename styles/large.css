@@ -182,7 +182,7 @@ header {
     float: right;
     background-color: rgb(39, 37, 37);
     /* Set the background color of the shape */
-    border-radius: 60% 40% 60% 30%;
+    border-radius: 5%;
     transition: transform 1s ease;
     box-shadow: 5px 15px 30px rgba(128, 97, 97, 0.619);
 }
@@ -193,7 +193,7 @@ header {
     height: auto;
     max-width: 500px;
     /* set a maximum width to avoid excessive scaling */
-    border-radius: 57% 10% 60% 30%;
+    border-radius: 50%;
     margin-bottom: 30px;
     margin-left: 70px;
     /* increased box shadow for cover effect */
@@ -224,7 +224,7 @@ header {
 
 /* Footer Styles */
 footer {
-    background-color: #1e1d1d;
+    background-color:#1e1d1d;
     /* Dark background color for the footer */
     color: #9a9090;
     text-align: center;
