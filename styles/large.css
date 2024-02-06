@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+
 }
 
 /* Header Styles */
@@ -15,6 +16,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #1e1d1d;
+    border-bottom: 5px dashed #ffffff87;
 
 }
 
@@ -98,19 +100,7 @@ header {
 
 
 /* Main Styles */
-.pic {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    /* Removes extra space below the image */
-    margin: 0;
-    margin-bottom: -10px;
-    background-size: cover;
-    /* Ensure the background image covers the entire container */
-    background-position: center;
-    /* Center the background image */
-    background-repeat: no-repea
-}
+
 
 /* Add a border top and bottom and space above the heading */
 .banner {
@@ -135,7 +125,6 @@ header {
 }
 
 #text-container {
-
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -143,8 +132,9 @@ header {
     border-top: 10px dashed #ffffff87;
     /* Stylish dotted border with a white color */
     padding: 20px;
-    /* Add some padding to the container */
-    background-image: url('/my-profile-page/images/pic6.jpeg');
+    margin-bottom: 0%;
+
+
 }
 
 #centered-text h2 {
@@ -153,22 +143,13 @@ header {
     color: #ffffff;
     letter-spacing: 2px;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
-    border-bottom: 7px dashed #ffffff87;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    border-bottom: 5px dashed #ffffff87;
+
     /* Adjust as needed */
-    animation: move-horizontally-h2 50s infinite linear;
 }
 
-@keyframes move-horizontally-h2 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 #text-container p {
@@ -183,10 +164,25 @@ header {
     padding: 10px;
     margin-right: 180px;
     float: right;
-    background-color: rgb(39, 37, 37);
-    border-radius: 5%;
-    box-shadow: 5px 15px 30px rgba(128, 97, 97, 0.619);  
 }
+
+#about-me p {
+    animation: slideInBottom 8s forwards;
+}
+
+/* Keyframes for moving the "About Me" paragraph */
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #text-container p,
 #text-container img.profile-pic {
     opacity: 0;
@@ -199,6 +195,7 @@ header {
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -211,6 +208,7 @@ header {
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -251,12 +249,222 @@ header {
     /* adjust hover effect */
 }
 
-
 #text-container p:hover {
     font-family: 'Megrim', system-ui;
     font-style: italic;
     color: #9a9090;
 }
+
+/* Keyframes for bar animation */
+@keyframes fillWidth {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Skills Styling */
+.skills {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+
+    margin-bottom: 00px;
+}
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 20px;
+    margin: 0 5px;
+    background-color: #27ae60;
+    display: inline-block;
+    animation: fillWidth 5s ease-in-out;
+}
+
+/* Different colors for each skill */
+.html {
+    width: 95%;
+    background-color: #3498db;
+}
+
+.css {
+    width: 95%;
+    background-color: #e74c3c;
+}
+
+.js {
+    width: 95%;
+    background-color: #f39c12;
+}
+
+.python {
+    width: 90%;
+    background-color: #9b59b6;
+}
+
+/* Keyframes for animation */
+@keyframes scaleUpDown {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Keyframes for changing text colors */
+@keyframes changeTextColors {
+    0% {
+        color: #2fff36;
+    }
+
+    25% {
+        color: #37a3e7;
+    }
+
+    50% {
+        color: #ecec30;
+    }
+
+    75% {
+        color: #eeeeee;
+    }
+
+    100% {
+        color: #e72e2e;
+    }
+}
+
+/* Styling with animation */
+.percentages {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+    animation: scaleUpDown 2s infinite alternate;
+    /* Animation added */
+}
+
+/* Different background colors for each percentage */
+
+
+.percentages p {
+    border: 5px solid #807878;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 50px;
+    border-radius: 40%;
+    animation: changeTextColors 5s infinite;
+    /* Animation added */
+}
+
+#text-container p {
+    font-size: 24px;
+    color: #9a9090;
+    line-height: 1.5;
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding: 10px;
+    margin-right: 180px;
+    float: right;
+}
+
+#text-container p,
+#text-container img.profile-pic {
+    opacity: 0;
+    transition: opacity 10s ease, transform 10s ease;
+}
+
+/* Define an animation to slide in from left when the text becomes visible */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Define an animation to slide in from right when the image becomes visible */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the text when it becomes visible in the viewport */
+#text-container p.in-view-left {
+    animation: slideInLeft 5s forwards;
+}
+
+/* Apply the animation to the image when it becomes visible in the viewport */
+#text-container img.profile-pic.in-view-right {
+    animation: slideInRight 5s forwards;
+}
+
+/* Rectangular boxes on top */
+.rectangles {
+    font-size: 20px !important;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.rectangle {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.html-rectangle {
+    background-color: #3498db;
+}
+
+.css-rectangle {
+    background-color: #e74c3c;
+}
+
+.js-rectangle {
+    background-color: #f39c12;
+}
+
+.python-rectangle {
+    background-color: #9b59b6;
+}
+
 
 /* Hover effect for footer logo */
 .footer-logo:hover {
