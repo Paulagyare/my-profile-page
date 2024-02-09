@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Creepster&family=Megrim&family=Nosifer&family=Rubik+Burned&family=Rubik+Vinyl&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Megrim&family=Nosifer&family=Rubik+Burned&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/large.css">
     <title>Paul Agyare's Profile Page</title>
@@ -20,8 +20,7 @@
         <div class="logo-container">
             <img src="images/IMG_1291_Original_25.jpg" alt="Paul Agyare's Logo" class="logo">
         </div>
-        <h1 class="banner"> FULLSTACK
-            Developer</h1>
+        <h1 class="banner"> FULLSTACK Developer</h1>
         <div class="navigation-menu">
             <ul>
 
@@ -35,7 +34,7 @@
     <main class="main page">
         <!-- About me section -->
         <div id="text-container">
-            <div id="centered-text">
+            <div id="about-me-text">
                 <h2>ABOUT ME</h2>
             </div>
             <div class="content-container">
@@ -72,10 +71,57 @@
                     <p>JavaScript: 95%</p>
                     <p>Python: 90%</p>
                     <P> flatter: 90%</P>
-                    <p> Java: 70% (coming soon)</p>
-                    <p> PHP: 10% (coming soon)</p>
+                    <p> Java: 70% (soon)</p>
+                    <p> PHP: 10% (soon)</p>
                 </div>
             </div>
+            </div>
+        </section>
+        <section class="my-portfolio">
+            <div id="projects-container" class="row">
+                <!-- Sample project item 1 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="/projects/1/show" class="portfolio-link" data-toggle="modal">
+                        <img src="/my-profile-page/images/agyare.jpeg" alt="image for the agyare's enterpeices">
+                        <h3>The Agyare's Enterprises</h3>
+                        <p>A purchasing, supply, import, and export enterprise.</p>
+                        <ul>
+                            <li>Client: The Agyare's Enterprises</li>
+                            <li>Category: Business Solutions</li>
+                            <li>Technologies: HTML, CSS, JavaScript, PHP</li>
+                        </ul>
+                    </a>
+                </div>
+                <!-- Sample project item 2 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="/projects/2/show" class="portfolio-link" data-toggle="modal">
+                        <img src="/my-profile-page/images/everything.jpeg" alt="Project 2">
+                        <h3>Everything Lifestyle</h3>
+                        <p>A kitchen materials sales shop.</p>
+                        <ul>
+                            <li>Client: Everything Lifestyle</li>
+                            <li>Category: E-commerce</li>
+                            <li>Technologies: React, Node.js, MongoDB</li>
+                        </ul>>
+                    </a>
+                </div>
+                <!-- Repeat project items as needed -->
+
+            </div>
+            <button onclick="loadMoreProjects()" id="load-more">Load More Projects</button>
+        </section>
+        <section class="contact-me">
+            <img src="/my-profile-page/images/call.jpg" alt="Me" class="img-responsive img-centered">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Feel free to email me at any time with questions or just to say hello. I'll get back to you as
+                        soon as possible!</p>
+                    <p>Feel free to contact me for any inquiries or projects you may have.</p>
+                    <a href="mailto:biggstagga@email.com" class="btn btn-default btn-lg">Email Me</a>
+                    <a href="tel:+233591692567" class="btn btn-default btn-lg">Call Me</a>
+                </div>
             </div>
         </section>
         <script src="script.js" defer></script>
